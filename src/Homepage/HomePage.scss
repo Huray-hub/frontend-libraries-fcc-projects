@@ -1,0 +1,21 @@
+ul {
+    list-style: none;
+    width: 100%;
+
+    &.project-links {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+
+        button {
+            border: none;
+            background: transparent;
+            cursor: pointer;
+
+            i {
+                color: white;
+                font-size: 50px;
+            }
+        }
+    }
+}

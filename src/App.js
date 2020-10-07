@@ -1,26 +1,35 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import HomePage from "./Homepage/HomePage";
+import RandomQuoteMachine from "./RandomQuoteMachine/RandomQuoteMachine";
+import MarkdownPreviewer from "./MarkdownPreviewer/MarkdownPreviewer";
+import DrumMachine from "./DrumMachine/DrumMachine";
+import Calculator from "./Calculator/Calculator";
+import PomodoroClock from "./PomodoroClock/PomodoroClock";
+import "./App.scss";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+const App = () => {
+    return (
+        <Router>
+          <Switch>
+          <Route exact path="/" component={HomePage} />
+            <Route
+                exact
+                path="/random-quote-machine"
+                component={RandomQuoteMachine}
+            />
+            <Route
+                exact
+                path="/markdown-previewer"
+                component={MarkdownPreviewer}
+            />
+            <Route exact path="/drum-machine" component={DrumMachine} />
+            <Route exact path="/calculator" component={Calculator} />
+            <Route exact path="/pomodoro-clock" component={PomodoroClock} />
+          </Switch>
+           
+        </Router>
+    );
+};
 
 export default App;

@@ -1,0 +1,91 @@
+@import "https://fonts.googleapis.com/css?family=Share+Tech+Mono";
+@font-face {
+    font-family: "Digital";
+    src: url("//db.onlinewebfonts.com/t/8e22783d707ad140bffe18b2a3812529.eot");
+    src: url("//db.onlinewebfonts.com/t/8e22783d707ad140bffe18b2a3812529.eot?#iefix")
+            format("embedded-opentype"),
+        url("//db.onlinewebfonts.com/t/8e22783d707ad140bffe18b2a3812529.woff2")
+            format("woff2"),
+        url("//db.onlinewebfonts.com/t/8e22783d707ad140bffe18b2a3812529.woff")
+            format("woff"),
+        url("//db.onlinewebfonts.com/t/8e22783d707ad140bffe18b2a3812529.ttf")
+            format("truetype"),
+        url("//db.onlinewebfonts.com/t/8e22783d707ad140bffe18b2a3812529.svg#Digital-7")
+            format("svg");
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    font-size: 22px;
+    background: #c2c2d6;
+    color: white;
+    padding: 0;
+    margin: 0;
+    font-family: Share Tech Mono, monospace;
+
+    #calculator {
+        background: gray;
+        border: 4px solid black;
+        width: 300px;
+        height: 350px;
+
+        #display {
+            max-width: 100%;
+            width: 100%;
+            background: black;
+            height: 10%;
+            text-align: right;
+            //padding-left: 5px;
+            //padding-right: 5px;
+            vertical-align: middle;
+            font-family: "Digital";
+
+            font-size: 30px;
+        }
+
+        #buttonsContainer {
+            display: flex;
+            flex-wrap: wrap;
+            height: 90%;
+            position: relative;
+
+            .button {
+                // width: calc(25% - 2px);
+                // height: calc (20% - 2px);
+                width: 24.3%;
+                height: 19.5%;
+                border: 1px solid black;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                &:hover {
+                    color: black;
+                    cursor: pointer;
+                    border: 1px solid white;
+                }
+
+                &#clear,
+                &#zero {
+                    //width: calc(50% - 2px);
+                    width: 49.3%;
+                }
+
+                &#clear {
+                    background: rgb(172, 57, 57);
+                }
+
+                &#equals {
+                    background: rgb(0, 68, 102);
+                    position: absolute;
+                    bottom: 0;
+                    right: 0;
+                    height: 39.4%;
+                }
+            }
+        }
+    }
+}
