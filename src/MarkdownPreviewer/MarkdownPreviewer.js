@@ -56,7 +56,7 @@ const Editor = (props) => {
 
     return (
         <div id="editor-wrapper">
-            <h2>Editor</h2>
+            <h3>Editor</h3>
             <textarea
                 id="editor"
                 value={markdown}
@@ -69,7 +69,7 @@ const Editor = (props) => {
 const Preview = (props) => {
     return (
         <div id="preview-wrapper">
-            <h2>Preview</h2>
+            <h3>Preview</h3>
             <div
                 id="preview"
                 dangerouslySetInnerHTML={{
@@ -88,9 +88,13 @@ const MarkdownPreviewer = () => {
     useFreeCodeCampTests();
 
     return (
-        <div id="wrapper">
-            <Editor markdown={markdown} setMarkdown={setMarkdown} />
-            <Preview markdown={markdown} />
+        <div className="markdown-previewer container">
+            <h2>Markdown Previewer</h2>
+            <div id="wrapper">
+                
+                <Editor markdown={markdown} setMarkdown={setMarkdown} />
+                <Preview markdown={markdown} />
+            </div>
         </div>
     );
 };

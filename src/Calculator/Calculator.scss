@@ -1,30 +1,11 @@
-@import "https://fonts.googleapis.com/css?family=Share+Tech+Mono";
-@font-face {
-    font-family: "Digital";
-    src: url("//db.onlinewebfonts.com/t/8e22783d707ad140bffe18b2a3812529.eot");
-    src: url("//db.onlinewebfonts.com/t/8e22783d707ad140bffe18b2a3812529.eot?#iefix")
-            format("embedded-opentype"),
-        url("//db.onlinewebfonts.com/t/8e22783d707ad140bffe18b2a3812529.woff2")
-            format("woff2"),
-        url("//db.onlinewebfonts.com/t/8e22783d707ad140bffe18b2a3812529.woff")
-            format("woff"),
-        url("//db.onlinewebfonts.com/t/8e22783d707ad140bffe18b2a3812529.ttf")
-            format("truetype"),
-        url("//db.onlinewebfonts.com/t/8e22783d707ad140bffe18b2a3812529.svg#Digital-7")
-            format("svg");
-}
-
-body {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
+.calculator {
     font-size: 22px;
     background: #c2c2d6;
-    color: white;
-    padding: 0;
-    margin: 0;
-    font-family: Share Tech Mono, monospace;
+    flex-direction: column;
+
+    h1 {
+        color: black;
+    }
 
     #calculator {
         background: gray;
@@ -38,8 +19,6 @@ body {
             background: black;
             height: 10%;
             text-align: right;
-            //padding-left: 5px;
-            //padding-right: 5px;
             vertical-align: middle;
             font-family: "Digital";
 

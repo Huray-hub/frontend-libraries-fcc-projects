@@ -1,21 +1,24 @@
-ul {
-    list-style: none;
-    width: 100%;
+.homepage{
+    background-color: #1B1B32;
 
-    &.project-links {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-
-        button {
-            border: none;
-            background: transparent;
-            cursor: pointer;
-
-            i {
-                color: white;
-                font-size: 50px;
+    ul {
+        width: 100%;
+    
+        &.project-links {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            padding: 0;
+    
+            button {   
+                i {                
+                    font-size: 42px;
+                    color: white;
+                }
             }
         }
     }
 }
+
+
+

@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import "./Calculator.scss";
+import {useFreeCodeCampTests} from "../util";
 
 const buttons = [
     { name: "clear", symbol: "AC" },
@@ -177,11 +178,17 @@ const Display = (props) => {
 const Calculator = () => {
     const [contentDisplay, setContentDisplay] = useState("0");
 
+    useFreeCodeCampTests()
+
     return (
-        <div id="calculator">
+        <div className="calculator container">
+            <h1 className="project-title">Calculator</h1>
+            <div id="calculator">           
             <Display contentDisplay={contentDisplay} />
             <ButtonsContainer setContentDisplay={setContentDisplay} />
         </div>
+        </div>
+       
     );
 };
 

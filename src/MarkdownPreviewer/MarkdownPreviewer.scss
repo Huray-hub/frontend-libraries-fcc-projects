@@ -1,43 +1,49 @@
-body {
+.markdown-previewer {
     background-color: #add8e6;
     color: black;
-  
+    height: auto;
+    flex-direction: column;
+
     #wrapper {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-  
-      #editor,
-      #preview {
-        background-color: #03a9f4;
-        opacity: 0.8;
-      }
-  
-      #editor-wrapper {
-        text-align: center;
-        width: 100%;
-        height: 150px;
-        margin-bottom: 70px;
-  
-        #editor {
-          resize: none;
-          width: 100%;
-          height: 100%;
-        }
-      }
-  
-      #preview-wrapper {
-        width: 100%;
-  
-        & > h2 {
-          text-align: center;
-        }
-  
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 70%;
+        height: inherit;
+        max-height: 70vh;
+
+        #editor,
         #preview {
-          padding-left: 15px;
-          padding-right: 15px;
+            background-color: #03a9f4;
+            opacity: 0.8;
         }
-      }
+
+        #editor-wrapper {
+            text-align: center;
+            width: 60%;
+            height: 150px;
+            margin-bottom: 60px;
+
+            #editor {
+                resize: none;
+                width: 100%;
+                height: 100%;
+            }
+        }
+
+        #preview-wrapper {
+            width: 70%;
+
+            #preview {
+                max-height: 35vh;
+                display: inline-block;
+                overflow: overlay;
+                width: 100%;
+                border: 1px solid black;
+
+                padding-left: 15px;
+                padding-right: 15px;
+            }
+        }
     }
-  }
-  
+}

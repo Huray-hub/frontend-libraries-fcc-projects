@@ -1,0 +1,36 @@
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: black;
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+   
+
+    font-size: 15px;
+
+    .logo {
+        font-size: 35px;
+        margin-left: 4%;
+        margin-right: 2%;
+    }
+
+    ul.project-links {
+        display: flex;
+
+        justify-content: flex-start;
+
+        li {
+            margin-left: 10px;
+            margin-right: 10px;
+         
+            i {
+                font-size: 28px;
+                color: white;
+            }
+        }
+    }
+   
+}
