@@ -1,4 +1,4 @@
-#These are the 5 projects that I made to acquire FreeCodeCamp's Front-end Libraries Certification.
+## These are the 5 projects that I made to acquire FreeCodeCamp's Front-end Libraries Certification.
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
